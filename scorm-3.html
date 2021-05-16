@@ -23,40 +23,32 @@
       <div class="grid-item">
         <section class="nav-vert">
           <div class="title-container">
-            <p>Введение</p>
+            <p>SCORM</p>
           </div>
           <div class="hr-container"> 
             <hr class="hr-1"/>
           </div>
           <div class="navigation-container"> 
-            <div class="link-container"> 
-              <p class="inf-text">В данной главе отсутствуют подразделы</p>
+            <div class="navigation-container"> 
+              <div class="link-container"> <a href="scorm.html">Введение SCORM</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="scorm-2.html">Основы SCORM</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="scorm-3.html">Общая архитектура курса </a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="scorm-4.html">Формат структуры дистанционного курса</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="scorm-5.html">Система управления обучением </a></div>
             </div>
           </div>
-          <!--.navigation-container 
-          .link-container 
-              a(href="#") Подраздел 1.1
-          .hr-link
-              hr
-          .link-container 
-              a(href="#") Подраздел 1.2
-          .hr-link
-              hr
-          .link-container 
-              a(href="#") Подраздел 1.3
-          .hr-link
-              hr
-          .link-container 
-              a(href="#") Подраздел 1.4
-          .hr-link
-              hr
-          .link-container 
-              a(href="#") Подраздел 1.5
-          .hr-link
-              hr
-          .link-container 
-              a(href="#") Подраздел 1.6
-          -->
         </section>
       </div>
       <div class="grid-item">
@@ -70,22 +62,39 @@
         </section>
       </div>
       <div class="grid-item">
-        <section class="contents" x-data="{p1 : true, p2 : false}">
+        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false}">
           <div class="page" x-show="p1">
             <div class="content-container">
-              <div class="title-container"> 
-                <h2>Введение </h2>
-              </div>
-              <div class="text-container"> 
-                <p>В настоящее время ряд международных организаций, консорциумов, национальных комитетов отдельных стран тесно сотрудничают в сфере разработки и стандартизации элементов системного подхода к построению систем дистанционного обучения, а также других обучающих систем, функционирующих на базе информационных технологий.</p>
-                <p>Наличие огромного количества разработчиков программного обеспечения в сфере ДО ставит проблемы стандартизации на первое место среди факторов успешного развития этой деятельности.</p>
-                <p><b>Стандарт</b> - это спецификация, разработанная аккредитованной организацией, занимающейся проблемами стандартизации.</p>
-                <p><b>Стандарт</b> – это формат, утвержденный признанным институтом стандартизации или принятый предприятиями отрасли в качестве образца.</p>
+              <div class="box-row">
+                <div class="col">
+                  <div class="title-container"> 
+                    <h2>Общая архитектура курса</h2>
+                  </div>
+                  <div class="text-container"> 
+                    <p>Основными элементами эталонной модели SCO являются (см. Рис.): </p>
+                  </div>
+                  <div class="list-container"> 
+                    <ul> 
+                      <li> 
+                        <p>Формат Структуры Курса (Course Structure Format);  </p>
+                      </li>
+                      <li> 
+                        <p>Среда Исполнения (Runtime Environment); </p>
+                      </li>
+                      <li> 
+                        <p>Метаданные (Metadata).  </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col"> 
+                  <div class="image-container"><img width="95%" src="images/scorm1.png"/></div>
+                </div>
               </div>
             </div>
             <div class="buttons-container"> 
               <div class="button-container"> 
-                <button title="Слайд отсутствует">
+                <button title="Предыдущий подраздел: Основы SCORM"><a href="scorm-2.html"></a>
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>
@@ -103,32 +112,13 @@
           <div class="page" x-show="p2">
             <div class="content-container">
               <div class="title-container"> 
-                <h2>Введение <span>(продолжение)</span></h2>
+                <h2> Общая архитектура курса <span>(продолжение)</span></h2>
               </div>
               <div class="text-container"> 
-                <p>В настоящее время можно выделить следующие основные направления в сфере стандартизации технологий дистанционного обучения:</p>
-              </div>
-              <div class="list-container"> 
-                <ul> 
-                  <li> 
-                    <p>обеспечение единой терминологии в сфере технологий дистанционного обучения;</p>
-                  </li>
-                  <li> 
-                    <p>обеспечение единых моделей управления дистанционным обучением;</p>
-                  </li>
-                  <li> 
-                    <p>определение моделей данных, обеспечивающих информационный обмен в рамках дистанционного обучения;</p>
-                  </li>
-                  <li> 
-                    <p>формирование единых требований к уровню представления дистанционных курсов (структура дистанционного курса, поведение дистанционного курса, обмен управляющей информацией, и т.д.);</p>
-                  </li>
-                  <li> 
-                    <p>стандартизация интерфейсов между системами дистанционного обучения и дистанционными курсами;</p>
-                  </li>
-                  <li> 
-                    <p>обеспечение формализации представления результатов тестирования или сертификации, обмена тестовыми заданиями, а также организации самого процесса оценивания (алгоритма подсчета баллов, алгоритмы адаптивного тестирования и т.д.).</p>
-                  </li>
-                </ul>
+                <p>LMS и Метаданные являются серверной частью курса, Среда исполнения – клиентской. </p>
+                <p>Данный стандарт позволяет сделать “начинки” каждой из составляющих независимыми друг от друга. </p>
+                <p>Метаданные (Metadata Dictionary) с описанием назначения и типа содержимого модуля, сведениями об авторах, цене, требованиями к технической платформе и др.; эта часть заимствована из спецификаций IEEE.</p>
+                <p>SCORM идентифицирует три типа метаданных обучающего содержания: <b>метаданные первичных ресурсов</b> (Raw Media Meta-Data),  <b>метаданные содержания</b> (Content Meta-Data),  <b>метаданные курса</b> (Course Meta-Data).  </p>
               </div>
             </div>
             <div class="buttons-container"> 
@@ -140,7 +130,7 @@
                 </button>
               </div>
               <div class="button-container"> 
-                <button title="Следующая глава: SCORM"><a href="scorm.html"></a>
+                <button title="Следующий подраздел: Формат структуры дистанционного курса"><a href="scorm-4.html"></a>
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>
