@@ -23,30 +23,38 @@
       <div class="grid-item">
         <section class="nav-vert">
           <div class="title-container">
-            <p>SCORM</p>
+            <p>IMS</p>
           </div>
           <div class="hr-container"> 
             <hr class="hr-1"/>
           </div>
           <div class="navigation-container"> 
             <div class="navigation-container"> 
-              <div class="link-container"> <a href="scorm.html">Введение SCORM</a></div>
+              <div class="link-container"> <a href="ims.html">Введение IMS</a></div>
               <div class="hr-link">
                 <hr/>
               </div>
-              <div class="link-container"> <a href="scorm-2.html">Основы SCORM</a></div>
+              <div class="link-container"> <a href="ims-2.html">Спецификация IMS Learner Information Package</a></div>
               <div class="hr-link">
                 <hr/>
               </div>
-              <div class="link-container"> <a href="scorm-3.html">Общая архитектура курса </a></div>
+              <div class="link-container"> <a href="ims-3.html">IMS Digital Repositories Interoperability</a></div>
               <div class="hr-link">
                 <hr/>
               </div>
-              <div class="link-container"> <a href="scorm-4.html">Формат структуры дистанционного курса</a></div>
+              <div class="link-container"> <a href="ims-4.html">IMS Learning Resource Meta-Data Information Model</a></div>
               <div class="hr-link">
                 <hr/>
               </div>
-              <div class="link-container"> <a href="scorm-5.html">Система управления обучением </a></div>
+              <div class="link-container"> <a href="ims-5.html">IMS Question and Test Specification</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-6.html">Компоненты системы LTSA</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-7.html">Стандарты метаданных содержимого и упаковки IMS</a></div>
             </div>
           </div>
         </section>
@@ -62,29 +70,27 @@
         </section>
       </div>
       <div class="grid-item">
-        <section class="contents">
-          <div class="page">
+        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false}">
+          <div class="page" x-show="p1">
             <div class="content-container">
               <div class="title-container"> 
-                <h2>SCORM </h2>
+                <h2>Спецификация IMS Learner Information Package </h2>
               </div>
               <div class="text-container"> 
-                <p>Стандарт «SCORM» определяет структуру учебных материалов и интерфейс среды выполнения, за счет чего учебные объекты могут быть использованы в различных системах электронного дистанционного образования. ADL создал SCORM для интеграции различных стандартов и спецификаций (например, LOM, IMS CP) в единую модель контента. </p>
-                <p>Эталонная модель SCORM состоит из введения, или обзорной части (the Overview), описания модели интеграции содержания (the Content Aggregate Model) и описания рабочей среды, или среды выполнения программ (the Run-Time Environment – RTE). </p>
-                <p>Согласно требованиям SCORM, учебные программы должны содержать три основных компонента: язык взаимодействия программ, файл-манифест/пакет содержания, метаданные о курсе. </p>
-                <p>SCORM объединяет технические разработки IMS, AICC, ARIADNE, и IEEE LTSC в единую модель для всеобщего использования в дистанционном образовании.</p>
+                <p>Спецификация IMS Learner Information Package посвящена созданию модели обучаемого, включающей его идентификационные (биографические) данные, сведения, характеризующие уровень образования индивида, цели, жизненные интересы, предысторию обучения, владение языками, предпочтения в использовании компьютерных платформ, пароли доступа к средствам обучения и т.п.. Эти сведения используются для определения средств и методики обучения, учитывающие индивидуальные особенности обучаемого.   </p>
+                <p>Сведения могут быть представлены в виде таблицы, иерархического дерева, объектной модели. Возможно использование рекомендаций этой спецификации для представления данных об авторах учебных материалов и преподавателях, что может быть полезно использовано в системах управления образовательным учреждением. </p>
               </div>
             </div>
             <div class="buttons-container"> 
               <div class="button-container"> 
-                <button title="Предыдущая глава: Введение"><a href="index.html"></a>
+                <button title="Предыдущий подраздел: Введение IMS"><a href="ims.html"></a>
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>
                 </button>
               </div>
               <div class="button-container"> 
-                <button title="Следующий подраздел: Основы SCORM"><a href="scorm-2.html"></a>
+                <button title="Следующий подраздел: IMS Digital Repositories Interoperability"><a href="ims-3.html"></a>
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>

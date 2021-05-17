@@ -253,14 +253,11 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    height: 100%; }
+    padding-top: 25px;
+    width: 100%; }
   .content-container .title-container {
     padding-bottom: 10px; }
     .content-container .title-container span {
@@ -269,6 +266,11 @@ button {
   .content-container h2 {
     text-indent: 25px;
     text-transform: uppercase; }
+  .content-container .text-container a {
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+    .content-container .text-container a:hover {
+      color: #464646; }
   .content-container ol {
     color: #1d1d1d; }
   .content-container p {
@@ -344,6 +346,7 @@ button {
   .nav-vert .title-container {
     padding-bottom: 10px; }
   .nav-vert p {
+    text-align: center;
     color: white;
     font-size: 30px; }
   .nav-vert .hr-container {

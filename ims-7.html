@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Site </title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="header-box">
+        <div class="icon-container"> 
+          <div class="icon"></div>
+        </div>
+        <div class="article-container"> 
+          <h1>Стандарты разработки систем электронного обучения</h1>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="grid-item">
+        <section class="nav-vert">
+          <div class="title-container">
+            <p>IMS</p>
+          </div>
+          <div class="hr-container"> 
+            <hr class="hr-1"/>
+          </div>
+          <div class="navigation-container"> 
+            <div class="navigation-container"> 
+              <div class="link-container"> <a href="ims.html">Введение IMS</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-2.html">Спецификация IMS Learner Information Package</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-3.html">IMS Digital Repositories Interoperability</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-4.html">IMS Learning Resource Meta-Data Information Model</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-5.html">IMS Question and Test Specification</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-6.html">Компоненты системы LTSA</a></div>
+              <div class="hr-link">
+                <hr/>
+              </div>
+              <div class="link-container"> <a href="ims-7.html">Стандарты метаданных содержимого и упаковки IMS</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="grid-item">
+        <section class="navigation"> 
+          <div class="nav-link"><a href="index.html">Введение </a></div>
+          <div class="nav-link"><a href="scorm.html">SCORM</a></div>
+          <div class="nav-link"><a href="dubl.html">Дублинское ядро </a></div>
+          <div class="nav-link"><a href="ims.html">IMS</a></div>
+          <div class="nav-link"><a href="finish.html">Заключение</a></div>
+          <div class="nav-link"><a href="liter.html">Список источников</a></div>
+        </section>
+      </div>
+      <div class="grid-item">
+        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false, p4 : false, p5 : false, p6 : false, p7 : false}">
+          <div class="page" x-show="p1">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS</h2>
+              </div>
+              <div class="text-container"> 
+                <p><b>Спецификация IMS Content Packaging Specification</b> Спецификация IMS Content Packaging Specification разработана в конце 2000 г. Совместимость учебных средств и систем обеспечивается применением специального формата (IMS Content Packaging XML format), основанного на языке разметки XML. </p>
+                <p>Спецификация определяет функции описания и комплексирования учебных материалов, в том числе отдельных курсов и наборов пособий, в пакеты для сети КОС, поддерживающих концепции IMS. </p>
+                <p>Пакеты (дистрибутивы) снабжаются сведениями, называемыми манифестом (декларацией), о структуре содержимого, типах фрагментов, размещении учебных материалов.  </p>
+                <p>Манифест представляет собой иерархическое описание структуры со ссылками на файлы учебного материала. Каждый учебный компонент, который может использоваться самостоятельно, имеет свой манифест. Из манифестов компонентов образуются манифесты интегрированных курсов. Структура пакета учебника (учебных пособия) показана на Рис., а на следующем рисунке проиллюстрированы процедуры и роли участников учебного процесса, соответствующие концепции IMS.</p>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий подраздел: Компоненты системы LTSA"><a href="ims-6.html"></a>
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p1 = false; p2 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p2">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="box-row">
+                <div class="col">
+                  <div class="text-container"> 
+                    <p>Метаданные представляют согласованный по формату и форме определения элементов способ описания курсов, уроков, тем, медиакомпонентов и тестовых заданий.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="image-container"><img width="95%" src="images/ims-4.png"/></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p1 = true; p2 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p2 = false; p3 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p3">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="text-container"> 
+                <p><b>Информационная модель компоновки учебного курса</b></p>
+                <p>Эта модель определяет состав и форму представления информации учебного курса при его пересылке пользователям, то есть формат «блока» или «пакета» (Package) учебного курса. Основные элементы информационной модели показаны на рисунке.</p>
+                <p>Package Interchange File (Файл поставки) — это отдельный архивированный файл (например, в формате .zip, jar или .cab), который содержит логическую папку Package, включающую файл описания верхнего уровня (Manifest File) и подкаталоги файлов ресурсов учебного курса; по умолчанию для файла поставки используется формат PKZip v2.04g (.zip).</p>
+                <p>Manifest File (Файл описания) — это специальный файл на языке XML, описывающий состав и структуру файла поставки; по умолчанию файл описания имеет имя <b>imsmanifest.xml</b>.</p>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p2 = true; p3 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p3 = false; p4 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p4">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="text-container"> 
+                <p>Помимо этого файла в пакет должны включаться (если иное не оговорено особо) также файл определения типа документа — DTD и файл XML-схемы — XSD (XML Scheme Definition). Каждый файл описания содержит следующие секции:</p>
+              </div>
+              <div class="list-container"> 
+                <ul> 
+                  <li> 
+                    <p>Meta-data — XML-элемент, описывающий декларацию в целом;</p>
+                  </li>
+                  <li> 
+                    <p>Organizations — XML-элемент, описывающий структуру содержания учебного курса; </p>
+                  </li>
+                  <li> 
+                    <p>Resources — XML-элемент, содержащий ссылки на все физические ресурсы (файлы) курса, а также ссылки на необходимые внешние файлы;</p>
+                  </li>
+                  <li> 
+                    <p>Sub-manifest — один или более дополнительных файлов описания более низкого уровня; </p>
+                  </li>
+                  <li> 
+                    <p>Physical Files (Физические файлы) — это файлы, используемые для представления материала учебного курса (текстовые, графические, видео и т. д.)</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p3 = true; p4 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p4 = false; p5 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p5">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="text-container"> 
+                <p><b>Информационная модель тестовых данных</b></p>
+                <p>Информационная модель QTI содержит описание структуры и формата тестовых вопросов (questions, items) и заданий (tests, assessment), а также результатов тестирования. Применение указанной модели должно гарантировать корректный обмен соответствующими данными между средой исполнения и LMS, между разработчиками и базой данных учебного курса. Вместе с тем, информационная модель тестовых данных не налагает никаких ограничений на содержание тестов, форму их визуального представления и применяемые методические (педагогические) технологии.</p>
+                <p>Информационными объектами метаописания являются:</p>
+              </div>
+              <div class="list-container"> 
+                <ul> 
+                  <li> 
+                    <p><b>Assessment (Задание)</b> — объект, описывающий структуру данных тестового задания;</p>
+                  </li>
+                  <li> 
+                    <p><b>Section (Секция)</b> — объект, описывающий структуру данных отдельной секции тестового задания;</p>
+                  </li>
+                  <li> 
+                    <p><b>Item (Вопрос)</b> — объект, описывающий структуру данных тестового вопроса;</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p4 = true; p5 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p5 = false; p6 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p6">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="text-container"> 
+                <p>Информационными объектами метаописания являются:</p>
+              </div>
+              <div class="list-container"> 
+                <ul> 
+                  <li> 
+                    <p><b>Activity Selection (Выбор действия)</b> — выбор следующего действия, зависящего от маршрута продвижения и результатов, полученных до момента выбора действия;</p>
+                  </li>
+                  <li> 
+                    <p><b>Outcomes Processing (Обработка результатов)</b> — согласованная обработка всех частных оценок с целью получения итоговой оценки по тестовому заданию или секции;</p>
+                  </li>
+                  <li> 
+                    <p><b>Scoring Weights (Взвешивание оценок)</b> — упорядочивание полученных оценок по важности с целью вывода итоговой оценки;</p>
+                  </li>
+                  <li> 
+                    <p><b>Response Processing (Обработка реакции)</b> — обработка и оценка действий пользователя (обучаемого);</p>
+                  </li>
+                  <li> 
+                    <p><b>Presentation (Представление)</b> — доведение до пользователя (в простейшем случае — визуальное представление) содержания теста и допустимых действий в качестве реакции;</p>
+                  </li>
+                  <li> 
+                    <p><b>Examinee Record (Характеристика экзаменуемого)</b> — набор оценок, который выводится по завершении процесса тестирования</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p5 = true; p6 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующий слайд" @click="p6 = false; p7 = true">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p7">
+            <div class="content-container">
+              <div class="title-container"> 
+                <h2>Стандарты метаданных содержимого и упаковки IMS <span>(продолжение)</span> </h2>
+              </div>
+              <div class="text-container"> 
+                <p>Информационными объектами метаописания являются:</p>
+              </div>
+              <div class="list-container"> 
+                <ul> 
+                  <li> 
+                    <p><b>Outcomes (Результаты)</b> — набор результатов, которые должны быть оценены с целью обработки реакции. Они определяются используемым показателем и алгоритмом вычисления оценки;</p>
+                  </li>
+                  <li> 
+                    <p><b>Response (Реакция)</b> — вид реакции, предусмотренной в качестве ответа пользователя на выданное задание (вопрос); в простейшем случае — выбор одного из двух вариантов ответа;</p>
+                  </li>
+                  <li> 
+                    <p><b>Flow (Поток)</b> — логическая схема курса, которая определяет взаимосвязь между различными компонентами учебного материала; на основе которой обучаемый получает доступ к текстовым, графическим и другим элементам учебного материала и тестов;</p>
+                  </li>
+                  <li> 
+                    <p><b>Material (Материал)</b> — собственно содержимое учебного курса, предоставляемое в той или иной форме обучаемому.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-container"> 
+                <p>Подобно другим информационным моделям, QTI содержит описание соответствующих XML-схем для всех объектов модели.</p>
+              </div>
+            </div>
+            <div class="buttons-container"> 
+              <div class="button-container"> 
+                <button title="Предыдущий слайд" @click="p6 = true; p7 = false">
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="button-container"> 
+                <button title="Следующая глава: Заключение"><a href="finish.html"></a>
+                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Данный web-ресурс составлен и разработан студентом группы КТбо3-4 Черкашиной Зинаидой в 2021г.</p>
+    </footer>
+  </body>
+</html>
