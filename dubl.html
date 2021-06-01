@@ -30,14 +30,14 @@
           </div>
           <div class="navigation-container"> 
             <div class="link-container"> 
-              <p class="inf-text">В данной главе отсутствуют подразделы</p>
+              <p class="inf-text"> </p>
             </div>
           </div>
         </section>
       </div>
       <div class="grid-item">
         <section class="navigation"> 
-          <div class="nav-link"><a href="index.html">Введение </a></div>
+          <div class="nav-link"><a href="starter.html">Введение </a></div>
           <div class="nav-link"><a href="scorm.html">SCORM</a></div>
           <div class="nav-link"><a href="dubl.html">Дублинское ядро </a></div>
           <div class="nav-link"><a href="ims.html">IMS</a></div>
@@ -46,7 +46,7 @@
         </section>
       </div>
       <div class="grid-item">
-        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false, p4 : false}">
+        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false, p31 : false, p4 : false}">
           <div class="page" x-show="p1">
             <div class="content-container">
               <div class="title-container"> 
@@ -171,11 +171,39 @@
                 </button>
               </div>
               <div class="button-container"> 
-                <button title="Следующий слайд" @click="p3 = false; p4 = true">
+                <button title="Следующий слайд" @click="p3 = false; p31 = true">
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>
                 </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" x-show="p31">
+            <div class="content-container">
+              <div class="title-container"> 
+                <div class="center">
+                  <h2>Методанные MOOC</h2>
+                </div>
+              </div>
+              <div class="big-box-new">
+                <div class="button-container"> 
+                  <button title="Предыдущий слайд" @click="p3 = true; p31 = false">
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="video-container"> 
+                  <iframe src="https://www.youtube.com/embed/_evG4i6LmJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <div class="button-container"> 
+                  <button title="Следующий слайд" @click="p31 = false; p4 = true">
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
