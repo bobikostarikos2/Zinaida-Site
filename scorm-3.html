@@ -62,50 +62,60 @@
         </section>
       </div>
       <div class="grid-item">
-        <section class="contents" x-data="{p1 : true, p2 : false, p3 : false}">
+        <section class="contents" x-data="{p1 : true, p12 : false, p2 : false, p3 : false}">
           <div class="page" x-show="p1">
             <div class="content-container">
-              <div class="box-row">
-                <div class="col-2">
-                  <div class="title-container"> 
-                    <h2>Общая архитектура курса</h2>
-                  </div>
-                  <div class="text-container"> 
-                    <p>Основными элементами эталонной модели SCO являются (см. Рис.): </p>
-                  </div>
-                  <div class="list-container"> 
-                    <ul> 
-                      <li> 
-                        <p>Формат Структуры Курса (Course Structure Format);  </p>
-                      </li>
-                      <li> 
-                        <p>Среда Исполнения (Runtime Environment); </p>
-                      </li>
-                      <li> 
-                        <p>Метаданные (Metadata).  </p>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="title-container"> 
+                <div class="center pr2">
+                  <h2>Основные элементы эталонной модели SCO</h2>
                 </div>
-                <div class="col-2">
-                  <div class="image-container"><img width="88%" height="92%" src="images/scorm1.png"/></div>
+              </div>
+              <div class="big-box-new">
+                <div class="button-container"> 
+                  <button title="Предыдущий подраздел: Основы SCORM"><a href="scorm-2.html"></a>
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="image-container-x">
+                  <div class="center-all"><img width="70%" height="75%" src="images/scorm5.jpg"/></div>
+                </div>
+                <div class="button-container"> 
+                  <button title="Следующий слайд" @click="p12 = true; p1 = false">
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="buttons-container"> 
-              <div class="button-container"> 
-                <button title="Предыдущий подраздел: Основы SCORM"><a href="scorm-2.html"></a>
-                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
-                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
-                  </svg>
-                </button>
+          </div>
+          <div class="page" x-show="p12">
+            <div class="content-container">
+              <div class="title-container"> 
+                <div class="center pr2">
+                  <h2>Создание SCORM-совместимого курса</h2>
+                </div>
               </div>
-              <div class="button-container"> 
-                <button title="Следующий слайд" @click="p1 = false; p2 = true">
-                  <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
-                    <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
-                  </svg>
-                </button>
+              <div class="big-box-new">
+                <div class="button-container"> 
+                  <button title="Предыдущий слайд" @click="p1 = true; p12 = false">
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="image-container-x">
+                  <div class="center"><img width="65%" height="80%" src="images/scorm1.png"/></div>
+                </div>
+                <div class="button-container"> 
+                  <button title="Следующий слайд" @click="p12 = false; p2 = true">
+                    <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
+                      <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -114,16 +124,25 @@
               <div class="title-container"> 
                 <h2> Общая архитектура курса <span>(продолжение)</span></h2>
               </div>
-              <div class="text-container"> 
-                <p>LMS и Метаданные являются серверной частью курса, Среда исполнения – клиентской. </p>
-                <p>Данный стандарт позволяет сделать “начинки” каждой из составляющих независимыми друг от друга. </p>
-                <p>Метаданные (Metadata Dictionary) с описанием назначения и типа содержимого модуля, сведениями об авторах, цене, требованиями к технической платформе и др.; эта часть заимствована из спецификаций IEEE.</p>
-                <p>SCORM идентифицирует три типа метаданных обучающего содержания: <b>метаданные первичных ресурсов</b> (Raw Media Meta-Data),  <b>метаданные содержания</b> (Content Meta-Data),  <b>метаданные курса</b> (Course Meta-Data).  </p>
+              <div class="box-row">
+                <div class="col">
+                  <div class="text-container"> 
+                    <p>LMS и Метаданные являются серверной частью курса, Среда исполнения – клиентской. </p>
+                    <p>Данный стандарт позволяет сделать “начинки” каждой из составляющих независимыми друг от друга. </p>
+                    <p>Метаданные (Metadata Dictionary) с описанием назначения и типа содержимого модуля, сведениями об авторах, цене, требованиями к технической платформе и др.; эта часть заимствована из спецификаций IEEE.</p>
+                    <p>SCORM идентифицирует три типа метаданных обучающего содержания: <b>метаданные первичных ресурсов</b> (Raw Media Meta-Data),  <b>метаданные содержания</b> (Content Meta-Data),  <b>метаданные курса</b> (Course Meta-Data).  </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="image-container">
+                    <div class="pad"><img width="95%" src="images/scorm6.jpg"/></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="buttons-container"> 
               <div class="button-container"> 
-                <button title="Предыдущий слайд" @click="p1 = true; p2 = false">
+                <button title="Предыдущий слайд" @click="p12 = true; p2 = false">
                   <svg height="100%" width="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.171 512.171" style="enable-background:new 0 0 512.171 512.171;" xml:space="preserve">
                     <path d="M509.035,248.212l-213.504-212.8c-3.051-3.029-7.595-3.904-11.627-2.304c-3.989,1.664-6.571,5.547-6.571,9.856v117.333 H10.667C4.779,160.298,0,165.076,0,170.964v170.667c0,5.888,4.779,10.667,10.667,10.667h266.667v116.885 c0,4.309,2.603,8.192,6.592,9.856c1.323,0.555,2.709,0.811,4.075,0.811c2.773,0,5.504-1.088,7.552-3.115l213.504-213.419 c2.005-2.005,3.115-4.715,3.115-7.552C512.171,252.927,511.04,250.218,509.035,248.212z"></path>
                   </svg>
